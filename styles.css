@@ -1,0 +1,129 @@
+/* charity:water Landing Page Styles - Signature Colors: Yellow, Black, Pale Ivory */
+
+/* ---------------- Body ---------------- */
+body {
+  background-color: #fff7e1; /* pale ivory */
+  color: #000;               /* black text */
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------- Sections ---------------- */
+section {
+  background: #fff7e1;        /* pale ivory for all sections */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* subtle shadow */
+  margin: 24px 10px;
+  padding: 24px 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero {
+  background-color: #FFc907; /* yellow */
+  color: #000;               /* black text */
+  padding: 60px 20px;
+  border-radius: 0 0 16px 16px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+/* ---------------- Story Section ---------------- */
+.story {
+  background-color: #fff7e1; /* pale ivory */
+  color: #000;               /* black text */
+  padding: 30px 20px;
+}
+
+h2 {
+  color: #000;               /* black headings */
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* ---------------- Call-to-Action Section ---------------- */
+.call-to-action {
+  background-color: #FFc907; /* yellow */
+  color: #000;               /* black text */
+  padding: 30px 20px;
+}
+
+.donate-button {
+  background-color: #000;    /* black button */
+  color: #FFc907;            /* yellow text */
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.donate-button:hover {
+  background-color: #333;    /* darker black hover */
+  transform: translateY(-2px) scale(1.04); /* slight lift effect */
+}
+
+/* ---------------- Impact Image ---------------- */
+.impact-image {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ---------------- Media Queries (Responsive) ---------------- */
+@media (max-width: 600px) {
+  .hero {
+    padding: 32px 8px;
+  }
+
+  .hero h1 {
+    font-size: 1.4em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .story, .call-to-action {
+    padding: 14px 8px;
+  }
+
+  .impact-image {
+    width: 90%;
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 601px) {
+  .impact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .impact-image {
+    width: 300px;
+  }
+}
